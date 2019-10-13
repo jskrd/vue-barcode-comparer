@@ -13,7 +13,12 @@
         </tbody>
       </table>
       <form v-on:submit.prevent="append">
-        <input :id="title" type="text" class="form-control" placeholder="Scan barcode" ref="barcode">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-barcode"></i></span>
+          </div>
+          <input :id="title" type="text" class="form-control" placeholder="Scan barcode" ref="barcode">
+        </div>
       </form>
     </div>
   </div>
