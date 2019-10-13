@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <div class="card-body">
-      <h4 class="card-title text-center">
+      <h4 class="card-title text-center mb-3">
         <a href="#" class="text-dark stretched-link" v-on:click="$refs.barcode.focus()">{{ title }}</a>
       </h4>
       <table class="table table-sm text-monospace small">
