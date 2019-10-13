@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="text-center mb-5">
+    <p class="text-center mb-4">
       <button class="btn btn-secondary btn-lg" v-on:click="clear()">Clear</button>
     </p>
     <div class="row">

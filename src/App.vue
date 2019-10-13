@@ -1,5 +1,5 @@
 <template>
-  <div class="container my-3">
+  <div class="container my-4">
     <BarcodeComparer></BarcodeComparer>
   </div>
 </template>
