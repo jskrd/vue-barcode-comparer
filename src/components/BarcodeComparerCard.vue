@@ -5,6 +5,8 @@
         <a href="#" class="text-dark stretched-link" v-on:click="$refs.barcode.focus()">{{ title }}</a>
       </h4>
       <table class="table table-sm text-monospace small">
+        <col width="20%">
+        <col width="80%">
         <tbody>
           <tr v-for="(barcode, index) in barcodes" :key="index" :class="context(index)">
             <th scope="row">{{ index + 1 }}</th>
