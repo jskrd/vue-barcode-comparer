@@ -8,7 +8,12 @@
         <tbody>
           <tr v-for="(barcode, index) in barcodes" :key="index" :class="context(index)">
             <th scope="row" class="text-right">{{ index + 1 }}</th>
-            <td class="w-100 text-center">{{ barcode }}</td>
+            <td class="w-100 text-center">
+              {{ barcode }}
+              <span v-if="title === 'Inners' && matches(index) === false">
+                ({{ comparedBarcodes.indexOf(barcode) + 1 }})
+              </span>
+            </td>
           </tr>
         </tbody>
       </table>
