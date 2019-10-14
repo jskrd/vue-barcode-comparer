@@ -10,8 +10,8 @@
             <th scope="row" class="text-right">{{ index + 1 }}</th>
             <td class="w-100 text-center">
               {{ barcode }}
-              <span v-if="title === 'Inners' && matches(index) === false">
-                ({{ comparedBarcodes.indexOf(barcode) + 1 }})
+              <span v-if="matches(index) === false">
+                (matches with {{ matchesWith }} {{ comparedBarcodes.indexOf(barcode) + 1 }})
               </span>
             </td>
           </tr>
@@ -34,6 +34,7 @@ export default {
   name: 'BarcodeComparerCard',
   props: {
     title: String,
+    matchesWith: String,
     barcodes: Array,
     comparedBarcodes: Array
   },

@@ -5,10 +5,10 @@
     </p>
     <div class="row">
       <div class="col-6">
-        <Card title="Covers" :barcodes="covers" :comparedBarcodes="inners"></Card>
+        <Card title="Covers" matches-with="inner" :barcodes="covers" :comparedBarcodes="inners"></Card>
       </div>
       <div class="col-6">
-        <Card title="Inners" :barcodes="inners" :comparedBarcodes="covers"></Card>
+        <Card title="Inners" matches-with="cover" :barcodes="inners" :comparedBarcodes="covers"></Card>
       </div>
     </div>
   </div>
