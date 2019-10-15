@@ -41,8 +41,9 @@ export default {
   methods: {
     context: function (index) {
       return {
-        'table-success': this.matches(index) === true,
-        'table-danger': this.matches(index) === false
+        'bg-success text-white': this.matches(index) === true,
+        'bg-warning': this.matches(index) === false,
+        'bg-danger text-white': this.matches(index) === null
       }
     },
     matches: function (index) {
